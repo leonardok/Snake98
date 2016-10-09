@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &164332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499854}
+  - 114: {fileID: 11427352}
+  - 114: {fileID: 11447894}
+  - 114: {fileID: 11485082}
+  - 114: {fileID: 11443392}
+  m_Layer: 0
+  m_Name: _GM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499854
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11427352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc51db54191403046a904c02184678ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  wall: {fileID: 193158, guid: 483f28908ac85654290705f1d92a2b3d, type: 2}
+--- !u!114 &11443392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32dd93019f7149441961bc7cc9be30ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreGameObject: {fileID: 0}
+  gameOverScoreGameObject: {fileID: 0}
+  lastRecordGameObject: {fileID: 0}
+  newRecordScreen: {fileID: 0}
+  newRecordGameObject: {fileID: 0}
+  recordsURL: http://192.168.56.101:5000/v1/records
+--- !u!114 &11447894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48d6418eeee7f64d8cccfc2b75504ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateDelta: .400000006
+  direction: {x: 0, y: 1}
+  m_head: {fileID: 124766, guid: 468c07db54f583248ad7181079ef4f33, type: 2}
+  m_body: {fileID: 196172, guid: 6eb33b9097101984b82090c0913ccf4d, type: 2}
+  camera: {fileID: 0}
+  numberOfParts: 3
+  increaseVelocityBy: .0199999996
+--- !u!114 &11485082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f48033d0eb74834d989755b9aaf395a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noDeployDeltaTime: 1
+  fruit:
+    minWait: 3
+    maxWait: 10
+    gridCellSize: .639999986
+    gridWidthUnits: 46
+    gridHeightUnits: 30
+    prefabs:
+    - {fileID: 194354, guid: 0b41c12aad31c95409f63cbafc2ffd0f, type: 2}
+    hasFruitDeployed: 0
+  enemies:
+    minWait: 0
+    maxWait: 0
+    gridCellSize: .639999986
+    gridWidthUnits: 10
+    gridHeightUnits: 10
+    prefabs: []
+    hasFruitDeployed: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 164332}
+  m_IsPrefabParent: 1

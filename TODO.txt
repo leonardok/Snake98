@@ -1,0 +1,18 @@
+Directly from your old phone, your favorite bathroom game!
+
+In Snake '98 you will remember how cool, and hard, it was to get a high score in *almost the only game* for your phone (because in the old days this game, if not the only available game, at least was the most fun).
+
+Now instead of letting the score only ni your mobile phone, you can show your friends how good you are sharing your records directly from the game!
+
+Some features:
+- Share your records with friends
+- Save your highest record in your phone
+- (in the roadmap) Purchase items to use in-game
+- (in the roadmap) Keep track of other players scores with a unifyed score server
+- (in the roadmap) Play through other levels with increasing difficulty or just play arcade
+
+
+- interface cortada
+- botao de voltar tem que sair
+- your record ta tosco
+- aumentar velocidade inicial
